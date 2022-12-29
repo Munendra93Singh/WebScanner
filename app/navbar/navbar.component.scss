@@ -1,0 +1,101 @@
+// .header .logo {
+//     line-height: 0;
+// }
+.logo {
+    width: 200px;
+    height: 61px;
+    //padding-left: 55px;
+}  
+  .navbar a {    
+   // padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    padding-right: 45px;
+  }
+  
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 60px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+  
+}
+  .font-size {
+    font-size: 15px;
+}
+
+  .logo1 {
+    padding-left: -0;
+    background-color: rgb(237, 235, 241);   
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    //padding-right: 45px;
+  } 
+  
+/////////////////////////////////////////////@at-root
+
+.search {
+width: 60%;
+position: relative;
+display: flex;
+}
+
+.searchTerm {
+//width: 100%;
+border: 0.5px solid #344147;
+border-right: none;
+padding: 3px;
+height: 30px;
+border-radius: 5px 0 0 5px;
+outline: none;
+color: #9DBFAF;
+}
+
+.searchTerm:focus{
+color: #17282b;
+}
+
+.searchButton {
+width: 30px;
+height: 30px;
+border: 0.5px solid #1a292b;
+background: #414768;
+text-align: center;
+color: #fff;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+width: 30%;
+position: absolute;
+top: 50%;
+left: 80%;
+transform: translate(-50%, -40%);
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+box-shadow: 1px 2px 1px -1px rgb(50 50 50 / 100%), 5px 5px 5px 5px rgb(10 10 10 / 10%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}

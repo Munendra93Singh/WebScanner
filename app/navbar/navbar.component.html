@@ -1,0 +1,52 @@
+<div style="position:fixed;z-index: 1;">
+  <nav class="navbar navbar-expand-lg bg-white">
+    <a>
+      <img src="assets/SnelStart_logo.png" alt="logo" class="logo"  />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <input  class="form-control me-2" type="search" placeholder="Keyword" aria-label="Search" />
+      </ul>
+      <form class="d-flex" role="search" style="margin-left:1300px" *ngIf="isLoggedIn()">
+        <img src="assets/notification-bing.png" style="margin-right: 10px" />
+      </form>
+     
+      <ul class="p-0 m-0">
+        <li style="list-style: none">
+          <!-- <a (click)="login()" *ngIf="!isLoggedIn()" style="font-size: 20px"><i class="fa fa-user">login</i></a> -->
+    
+          <div class="container"  *ngIf="isLoggedIn()" > 
+          <div class="container text-center">
+            <div class="row align-items-start">
+             
+              <div class="col">
+                <div class="dropdown">
+                  <div class="text-center" >
+                    <img  [src]="profilePic" width="40" style="margin-right:0px"  class="rounded-circle"/>
+                  </div>
+                  <!-- <ul class="dropdown-content"  *ngIf="isLoggedIn()"> -->
+                    <div class="dropdown-content" *ngIf="isLoggedIn()">  
+                    <a style="font-size: 12px" routerLink="/" (click)="logout()" *ngIf="isLoggedIn()" >SignOut</a>
+                  <!-- </ul> -->
+                    </div>
+                </div>
+              </div>
+            </div>      
+        
+          </div>
+        </div> 
+        </li>
+      </ul>     
+    </div>
+  </nav>
+ 
+</div>
